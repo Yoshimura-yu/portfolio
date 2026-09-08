@@ -1,51 +1,181 @@
+/* =========================
+   全体
+========================= */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.8;
     margin: 0;
-    background-color: #f7f7f7;
+    background-color: #f4f6f8;
     color: #333;
 }
 
+
+/* =========================
+   ヘッダー
+========================= */
+
 header {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #ffffff;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffffff, #eef3f8);
 }
 
 header h1 {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 10px;
+    color: #1f3a5f;
+    letter-spacing: 2px;
 }
 
 header p {
-    margin: 5px 0;
+    margin: 8px 0;
 }
+
+header p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b6f92;
+}
+
+
+/* =========================
+   メイン
+========================= */
 
 main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
+
+/* =========================
+   セクション
+========================= */
+
 section {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 40px;
     margin-bottom: 30px;
-    border-radius: 12px;
+    border-radius: 16px;
+
+    /* カードを少し浮かせる */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
+
+
+/* =========================
+   見出し
+========================= */
 
 h2 {
     margin-top: 0;
-    border-bottom: 2px solid #ddd;
+    margin-bottom: 25px;
     padding-bottom: 10px;
+
+    color: #1f3a5f;
+
+    border-bottom: 3px solid #d9e3ed;
 }
 
-article {
-    margin-bottom: 25px;
+
+/* =========================
+   Skills
+========================= */
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    padding: 0;
+    list-style: none;
 }
+
+section ul li {
+    background-color: #eef3f8;
+    color: #365a7d;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   Works
+========================= */
+
+article {
+    padding: 25px;
+    margin-bottom: 20px;
+
+    background-color: #f8fafc;
+
+    border-left: 5px solid #4b6f92;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+/* マウスを乗せたとき */
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+    margin-top: 0;
+    color: #1f3a5f;
+}
+
+
+/* =========================
+   リンク
+========================= */
+
+a {
+    color: #3f6f9f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   フッター
+========================= */
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     color: #777;
+}
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
 }
