@@ -374,6 +374,7 @@ footer {
 
 }
 
+
 /* =========================
    葉っぱのアニメーション
 ========================= */
@@ -382,35 +383,80 @@ footer {
     position: fixed;
 
     top: -50px;
-    left: 20%;
 
-    font-size: 25px;
+    font-size: 22px;
 
-    animation: fall 8s linear infinite;
+    opacity: 0.4;
 
     pointer-events: none;
+
+    z-index: 20;
+
+    animation: fall 10s linear infinite;
 }
 
 
-/* 葉っぱが落ちる動き */
+/* 1枚目 */
+
+.leaf1 {
+    left: 15%;
+    animation-duration: 9s;
+}
+
+
+/* 2枚目 */
+
+.leaf2 {
+    left: 55%;
+    font-size: 18px;
+    animation-duration: 13s;
+    animation-delay: 3s;
+}
+
+
+/* 3枚目 */
+
+.leaf3 {
+    left: 80%;
+    font-size: 25px;
+    animation-duration: 11s;
+    animation-delay: 6s;
+}
+
+
+/* =========================
+   葉っぱが風に揺れながら落ちる
+========================= */
 
 @keyframes fall {
 
     0% {
         transform:
-            translate(0, 0)
+            translate(0, -50px)
             rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translate(70px, 200px)
+            rotate(90deg);
     }
 
     50% {
         transform:
-            translate(100px, 400px)
+            translate(-30px, 450px)
             rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translate(80px, 700px)
+            rotate(270deg);
     }
 
     100% {
         transform:
-            translate(-50px, 900px)
+            translate(-20px, 1000px)
             rotate(360deg);
     }
 
