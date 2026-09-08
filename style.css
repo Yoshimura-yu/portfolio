@@ -373,3 +373,45 @@ footer {
     }
 
 }
+
+/* =========================
+   葉っぱのアニメーション
+========================= */
+
+.leaf {
+    position: fixed;
+
+    top: -50px;
+    left: 20%;
+
+    font-size: 25px;
+
+    animation: fall 8s linear infinite;
+
+    pointer-events: none;
+}
+
+
+/* 葉っぱが落ちる動き */
+
+@keyframes fall {
+
+    0% {
+        transform:
+            translate(0, 0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translate(100px, 400px)
+            rotate(180deg);
+    }
+
+    100% {
+        transform:
+            translate(-50px, 900px)
+            rotate(360deg);
+    }
+
+}
