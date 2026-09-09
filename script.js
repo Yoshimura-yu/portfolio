@@ -5,6 +5,10 @@ window.addEventListener("scroll", function() {
 
     const image = document.querySelector(".background-image");
 
-    image.style.right = "0px";
+    const scroll = window.scrollY;
+
+    image.style.right = (-100 + scroll * 0.1) + "px";
+
+    image.style.opacity = Math.min(scroll / 500, 1);
 
 });
