@@ -386,7 +386,7 @@ footer {
 
     font-size: 22px;
 
-    opacity: 0.4;
+    opacity: 0.6;
 
     pointer-events: none;
 
@@ -397,8 +397,8 @@ footer {
 
 
 .leaf img {
-    width: 20px;
-    opacity: 0.4;
+    width: 45px;
+    opacity: 0.6;
 }
 
 
