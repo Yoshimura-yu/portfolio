@@ -396,9 +396,17 @@ footer {
 }
 
 
-.leaf img {
+.leaf1 img {
     width: 200px;
+    opacity: 1.0;
+}
+.leaf2 img {
+    width: 100px;
     opacity: 1.5;
+}
+.leaf3 img {
+    width: 150px;
+    opacity: 1.1;
 }
 
 
