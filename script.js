@@ -8,7 +8,8 @@ window.addEventListener("scroll", function() {
     const scroll = window.scrollY;
 
     image.style.right = (-200 + scroll * 0.1) + "px";
-
-    image.style.opacity = Math.min(scroll / 500, 1);
+    
+    // ふわっとの時間
+    image.style.opacity = Math.min(scroll / 800, 1); 
 
 });
