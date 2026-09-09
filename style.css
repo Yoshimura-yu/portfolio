@@ -499,13 +499,7 @@ footer {
 
 .background-image {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: -50px;
+    bottom: -100px;
     z-index: -1;
-    pointer-events: none;
-}
-
-.background-image img {
-    width: 300px;
-    opacity: 0.15;
 }
