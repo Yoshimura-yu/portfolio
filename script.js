@@ -10,6 +10,6 @@ window.addEventListener("scroll", function() {
     image.style.right = (-200 + scroll * 0.1) + "px";
     
     // ふわっとの時間
-    image.style.opacity = Math.min(scroll / 800, 1); 
+    image.style.opacity = Math.min(scroll / 1200, 1); 
 
 });
