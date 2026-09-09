@@ -1,2 +1,3 @@
-
-console.log("JavaScriptが読み込まれました！");
+window.addEventListener("scroll", function() {
+    console.log("スクロールした！");
+});
