@@ -1,3 +1,8 @@
+// window.addEventListener("scroll", function() {
+//     console.log("スクロールした！");
+// });
 window.addEventListener("scroll", function() {
-    console.log("スクロールした！");
+
+    console.log(window.scrollY);
+
 });
