@@ -7,8 +7,8 @@ window.addEventListener("scroll", function() {
 
     const scroll = window.scrollY;
 
-    image.style.right = (-100 + scroll * 0.1) + "px";
+    image.style.right = (-150 + scroll * 0.1) + "px";
 
-    image.style.opacity = Math.min(scroll / 400, 1);
+    image.style.opacity = Math.min(scroll / 500, 1);
 
 });
