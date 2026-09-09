@@ -396,6 +396,12 @@ footer {
 }
 
 
+.leaf img {
+    width: 45px;
+    opacity: 0.4;
+}
+
+
 /* 1枚目 */
 
 .leaf1 {
