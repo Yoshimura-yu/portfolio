@@ -9,6 +9,6 @@ window.addEventListener("scroll", function() {
 
     image.style.right = (-100 + scroll * 0.1) + "px";
 
-    image.style.opacity = Math.min(scroll / 500, 1);
+    image.style.opacity = Math.min(scroll / 400, 1);
 
 });
