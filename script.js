@@ -3,6 +3,8 @@
 // });
 window.addEventListener("scroll", function() {
 
-    console.log(window.scrollY);
+    const image = document.querySelector(".background-image");
+
+    image.style.right = "0px";
 
 });
