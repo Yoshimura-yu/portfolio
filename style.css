@@ -251,30 +251,20 @@ h2::after {
    Skills
 ========================= */
 
-section ul {
+#skills ul {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 12px;
-
     padding: 0;
-
     list-style: none;
 }
 
-section ul li {
-    background-color: #edf3eb;
-
+#skills li {
+    background-color: #eef5ef;
     color: #477d70;
-
-    padding: 9px 20px;
-
-    border-radius: 25px;
-
+    padding: 8px 18px;
+    border-radius: 30px;
     font-size: 14px;
-
-    border: 1px solid #dce8df;
 }
 
 
