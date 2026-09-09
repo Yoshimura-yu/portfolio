@@ -369,7 +369,7 @@ footer {
    葉っぱのアニメーション
 ========================= */
 
-.leaf {
+/* .leaf {
     position: fixed;
 
     top: -50px;
@@ -383,7 +383,7 @@ footer {
     z-index: 20;
 
     animation: fall 10s linear infinite;
-}
+} */
 
 
 /* .leaf1 img {
