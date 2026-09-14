@@ -516,7 +516,7 @@ footer {
     animation: float 4s ease-in-out infinite;
 }
 /* すーっと上がる → すーっと下がる → また上がる */
-@keyframes float {
+/* @keyframes float {
     0% {
         transform: translateY(0);
     }
@@ -528,4 +528,4 @@ footer {
     100% {
         transform: translateY(0);
     }
-}
+} */
