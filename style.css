@@ -529,3 +529,172 @@ footer {
         transform: translateY(0);
     }
 } */
+
+/* =========================
+   Works
+========================= */
+
+#works {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.works-intro {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+
+/* 作品カード */
+.work-card {
+    display: flex;
+    gap: 40px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    margin-bottom: 50px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* 作品画像 */
+.work-image {
+    flex: 1;
+}
+
+.work-image img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 18px;
+
+    display: block;
+}
+
+
+/* 右側の文章 */
+.work-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* カテゴリー */
+.work-category {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 6px 14px;
+
+    margin-bottom: 15px;
+
+    border-radius: 20px;
+
+    background: #f0f3ee;
+
+    font-size: 14px;
+}
+
+
+/* タイトル */
+.work-content h3 {
+    margin-bottom: 18px;
+
+    font-size: 26px;
+}
+
+
+/* 説明 */
+.work-description {
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* 成果 */
+.work-result {
+    padding: 18px 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+
+    background: #f7f7f4;
+}
+
+.work-result span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+.work-result strong {
+    font-size: 24px;
+}
+
+
+/* タグ */
+.work-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.work-tags span {
+    padding: 5px 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* 詳しく見る */
+.work-link {
+    text-decoration: none;
+
+    color: inherit;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.work-link:hover {
+    opacity: 0.6;
+}
+
+
+/* スマホ表示 */
+@media (max-width: 768px) {
+
+    .work-card {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .work-content h3 {
+        font-size: 22px;
+    }
+
+}
+
