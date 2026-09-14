@@ -700,4 +700,34 @@ footer {
     }
 
 }
+.work-card {
+    display: none;
+}
 
+.work-card.active {
+    display: block;
+}
+
+.works-menu {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.work-tab {
+    padding: 10px 20px;
+
+    border: 1px solid #d7ded7;
+    border-radius: 30px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.work-tab:hover,
+.work-tab.active {
+    background: #eef4ef;
+}
