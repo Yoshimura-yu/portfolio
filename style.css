@@ -699,15 +699,6 @@ footer {
         font-size: 22px;
     }
 
-}
-.work-card {
-    display: none;
-}
-
-.work-card.active {
-    display: block;
-}
-
 .works-menu {
     display: flex;
     gap: 12px;
@@ -736,4 +727,11 @@ footer {
     display: flex;
     transition: transform 0.7s ease;
 }
+   
+.works-slider {
+    overflow: hidden;
+}
 
+   .work-card {
+    min-width: 100%;
+}
