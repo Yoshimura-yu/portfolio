@@ -566,6 +566,9 @@ footer {
 /* 作品画像 */
 .work-image {
     flex: 1.2;
+
+    display: flex;
+    align-items: center;
 }
 
 .work-image img {
