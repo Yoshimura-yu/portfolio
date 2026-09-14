@@ -534,22 +534,93 @@ footer {
    Works
 ========================= */
 
+/* Worksセクション全体 */
 #works {
     max-width: 1100px;
     margin: 0 auto;
     padding: 80px 20px;
 }
 
+
+/* Worksタイトル下の説明文 */
 .works-intro {
     margin-bottom: 40px;
     line-height: 1.8;
 }
 
 
-/* 作品カード */
-.work-card {
+/* =========================
+   Works メニュー
+========================= */
+
+/* Excel / Django / Power Platform のボタンを横並び */
+.works-menu {
     display: flex;
-    gap: 40px;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+
+/* 各メニューボタン */
+.work-tab {
+    padding: 10px 20px;
+
+    border: 1px solid #d7ded7;
+    border-radius: 30px;
+
+    background: white;
+
+    cursor: pointer;
+
+    /* hover時の変化をなめらかに */
+    transition: 0.3s;
+}
+
+
+/* マウスを乗せたボタン・選択中のボタン */
+.work-tab:hover,
+.work-tab.active {
+    background: #eef4ef;
+}
+
+
+/* =========================
+   スライダー部分
+========================= */
+
+/*
+   カードを見るための「窓」
+   はみ出したカードは隠す
+*/
+.works-slider {
+    overflow: hidden;
+}
+
+
+/*
+   カードを載せる「レール」
+   子要素のwork-cardを横一列に並べる
+*/
+.works-track {
+    display: flex;
+
+    /* JavaScriptで位置を変えたとき
+       0.7秒かけて横にスライド */
+    transition: transform 0.7s ease;
+}
+
+
+/* =========================
+   作品カード
+========================= */
+
+.work-card {
+
+    /*
+       1枚のカード = スライダーの横幅100%
+       縮ませない、広げない
+    */
+    flex: 0 0 100%;
 
     background: rgba(255, 255, 255, 0.9);
 
@@ -557,18 +628,17 @@ footer {
 
     padding: 30px;
 
-    margin-bottom: 50px;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 
-/* 作品画像 */
-.work-image {
-    flex: 1.2;
+/* =========================
+   作品画像
+========================= */
 
-    display: flex;
-    align-items: center;
+.work-image {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .work-image img {
@@ -581,17 +651,10 @@ footer {
 }
 
 
-/* 右側の文章 */
-.work-content {
-    flex: 1;
+/* =========================
+   カテゴリー
+========================= */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-/* カテゴリー */
 .work-category {
     display: inline-block;
 
@@ -609,15 +672,21 @@ footer {
 }
 
 
-/* タイトル */
-.work-content h3 {
+/* =========================
+   タイトル
+========================= */
+
+.work-card h3 {
     margin-bottom: 18px;
 
     font-size: 26px;
 }
 
 
-/* 説明 */
+/* =========================
+   説明文
+========================= */
+
 .work-description {
     line-height: 1.9;
 
@@ -625,7 +694,10 @@ footer {
 }
 
 
-/* 成果 */
+/* =========================
+   成果
+========================= */
+
 .work-result {
     padding: 18px 20px;
 
@@ -649,9 +721,14 @@ footer {
 }
 
 
-/* タグ */
+/* =========================
+   タグ
+========================= */
+
 .work-tags {
     display: flex;
+
+    /* 入りきらなければ次の行へ */
     flex-wrap: wrap;
 
     gap: 10px;
@@ -670,7 +747,10 @@ footer {
 }
 
 
-/* 詳しく見る */
+/* =========================
+   詳しく見る
+========================= */
+
 .work-link {
     text-decoration: none;
 
@@ -686,52 +766,25 @@ footer {
 }
 
 
-/* スマホ表示 */
+/* =========================
+   スマホ表示
+========================= */
+
 @media (max-width: 768px) {
 
-    .work-card {
-        flex-direction: column;
-
-        gap: 25px;
+    /* ボタンが入りきらなければ折り返す */
+    .works-menu {
+        flex-wrap: wrap;
     }
 
-    .work-content h3 {
+    /* スマホではカード内の余白を少し小さく */
+    .work-card {
+        padding: 20px;
+    }
+
+    /* スマホではタイトルを少し小さく */
+    .work-card h3 {
         font-size: 22px;
     }
 
-.works-menu {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 30px;
-}
-
-.work-tab {
-    padding: 10px 20px;
-
-    border: 1px solid #d7ded7;
-    border-radius: 30px;
-
-    background: white;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.work-tab:hover,
-.work-tab.active {
-    background: #eef4ef;
-}
-
-.works-track {
-    display: flex;
-    transition: transform 0.7s ease;
-}
-   
-.works-slider {
-    overflow: hidden;
-}
-
-   .work-card {
-    min-width: 100%;
 }
