@@ -97,3 +97,37 @@ startAutoSlide();
 
 track.style.transform = "translateX(-100%)";
 
+// =========================
+// WORKS スライダー
+// =========================
+
+// 上のメニューボタンを全部取得
+const workTabs = document.querySelectorAll(".work-tab");
+
+// 横に動かすレールを取得
+const worksTrack = document.querySelector(".works-track");
+
+
+// ボタンそれぞれに処理をつける
+workTabs.forEach((tab, index) => {
+
+    // マウスを乗せたとき
+    tab.addEventListener("mouseenter", () => {
+
+        /*
+        index はボタンの順番
+
+        Excel           → 0
+        Django          → 1
+        Power Platform  → 2
+
+        1枚分 = 100% なので、
+        その分だけ左へ動かす
+        */
+        worksTrack.style.transform =
+            `translateX(-${index * 100}%)`;
+
+    });
+
+});
+
