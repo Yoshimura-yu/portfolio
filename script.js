@@ -14,120 +14,133 @@ window.addEventListener("scroll", function() {
 
 });
 
-// HTMLから.work-tabを持つ要素をすべて取得
+// =========================
+// WORKS スライダー
+// =========================
+
+
+// HTMLから.work-tabを持つボタンを全部取得
 const tabs = document.querySelectorAll(".work-tab");
 
-// HTMLから.work-cardを持つ要素をすべて取得
+
+// 横に動かす「レール」を取得
+const worksTrack = document.querySelector(".works-track");
+
+
+// カードを全部取得
+// 何枚あるか調べるために使う
 const cards = document.querySelectorAll(".work-card");
 
-// 現在表示している作品番号（0 = 1番目）
+
+// 現在表示しているカード番号
+// 0 = Excel
+// 1 = Django
+// 2 = Power Platform
 let currentIndex = 0;
 
-// 自動切り替え用のタイマーを入れる変数
+
+// 自動スライド用タイマー
 let timer;
 
 
-// 指定された番号の作品を表示する関数
+/* =========================
+   指定したカードまで横移動
+========================= */
+
 function showWork(index) {
 
-    // 一度すべてのタブからactiveを外す
-    tabs.forEach(tab => tab.classList.remove("active"));
+    /*
+      1枚 = 100%
 
-    // 一度すべてのカードからactiveを外す
-    cards.forEach(card => card.classList.remove("active"));
+      0番 → 0%
+      1番 → -100%
+      2番 → -200%
 
-    // 選ばれたタブだけactiveにする
+      レール全体を左へ動かす
+    */
+    worksTrack.style.transform =
+        `translateX(-${index * 100}%)`;
+
+
+    // 一度すべてのボタンからactiveを外す
+    tabs.forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+
+    // 現在表示しているボタンだけactiveにする
     tabs[index].classList.add("active");
 
-    // 選ばれたタブと同じ番号のカードもactiveにする
-    cards[index].classList.add("active");
 
-    // 現在表示している番号を記録
+    // 現在の番号を記録
     currentIndex = index;
 }
-// 各タブにマウスを乗せたときの処理
+
+
+/* =========================
+   タブにマウスを乗せたとき
+========================= */
+
 tabs.forEach((tab, index) => {
 
     tab.addEventListener("mouseenter", () => {
 
-        // 5秒ごとの自動切り替えを一旦停止
+        // 自動スライドを一旦止める
         clearInterval(timer);
 
-        // マウスを乗せた番号の作品を表示
+        // マウスを乗せたカードへ移動
         showWork(index);
+
     });
 
 });
 
 
-// 作品を5秒ごとに自動で切り替える関数
+/* =========================
+   自動スライド
+========================= */
+
 function startAutoSlide() {
+
+    // タイマーが重複しないよう一度止める
+    clearInterval(timer);
+
 
     timer = setInterval(() => {
 
-        // 現在の作品番号を1つ進める
+        // 次のカードへ
         currentIndex++;
 
-        // 最後のカードを超えたら最初（0番）に戻る
+
+        // 最後まで行ったら最初へ戻る
         if (currentIndex >= cards.length) {
             currentIndex = 0;
         }
 
-        // currentIndex番目の作品を表示
+
+        // カードを横へスライド
         showWork(currentIndex);
 
-    }, 5000); // 5000ミリ秒 = 5秒
+    }, 5000);
 
 }
-// すべてのタブに対して処理
+
+
+/* =========================
+   マウスがボタンから離れたら
+   自動スライド再開
+========================= */
+
 tabs.forEach(tab => {
 
-    // タブからマウスが離れたら
     tab.addEventListener("mouseleave", () => {
 
-        // 自動切り替えを再開する
         startAutoSlide();
 
     });
 
 });
 
-// ページ読み込み時にも自動切り替えを開始
+
+// ページを開いたときから自動スライド開始
 startAutoSlide();
-
-track.style.transform = "translateX(-100%)";
-
-// =========================
-// WORKS スライダー
-// =========================
-
-// 上のメニューボタンを全部取得
-const workTabs = document.querySelectorAll(".work-tab");
-
-// 横に動かすレールを取得
-const worksTrack = document.querySelector(".works-track");
-
-
-// ボタンそれぞれに処理をつける
-workTabs.forEach((tab, index) => {
-
-    // マウスを乗せたとき
-    tab.addEventListener("mouseenter", () => {
-
-        /*
-        index はボタンの順番
-
-        Excel           → 0
-        Django          → 1
-        Power Platform  → 2
-
-        1枚分 = 100% なので、
-        その分だけ左へ動かす
-        */
-        worksTrack.style.transform =
-            `translateX(-${index * 100}%)`;
-
-    });
-
-});
-
