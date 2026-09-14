@@ -136,20 +136,49 @@
 
 
     <!-- WORKS 01 -->
-    <article class="work-card">
+   <section id="works">
 
-        
-        <div class="work-content">
+    <h2>Works</h2>
+
+    <p class="works-intro">
+        業務の中にある「ちょっと面倒」を見つけ、
+        ITを活用して改善した制作事例をご紹介します。
+    </p>
+
+
+    <!-- WORKS メニュー -->
+    <div class="works-menu">
+
+        <button class="work-tab active" data-work="excel">
+            Excel / VBA
+        </button>
+
+        <button class="work-tab" data-work="django">
+            Django
+        </button>
+
+        <button class="work-tab" data-work="powerplatform">
+            Power Platform
+        </button>
+
+    </div>
+
+
+    <!-- カード表示エリア -->
+    <div class="works-slider">
+
+        <!-- WORKS 01 -->
+        <article class="work-card active" data-work="excel">
 
             <span class="work-category">Excel / VBA</span>
 
             <h3>労務日報・集計業務の自動化</h3>
 
-        <div class="work-image">
-            <img src="images/works01.png"
-                 alt="Excel VBAで作成した労務日報・自動集計システム">
-        </div>
-             
+            <div class="work-image">
+                <img src="images/works01.png"
+                     alt="Excel VBAで作成した労務日報・自動集計システム">
+            </div>
+
             <p class="work-description">
                 紙で管理していた作業日報をExcel化。
                 工事番号ごとの作業時間を記録し、
@@ -171,9 +200,67 @@
                 詳しく見る →
             </a>
 
-        </div>
+        </article>
 
-    </article>
+
+        <!-- WORKS 02 -->
+        <article class="work-card" data-work="django">
+
+            <span class="work-category">Python / Django</span>
+
+            <h3>AI議事録作成アプリ</h3>
+
+            <div class="work-image">
+                <img src="images/works02.png"
+                     alt="Python Djangoで作成した議事録アプリ">
+            </div>
+
+            <p class="work-description">
+                会議音声をアップロードし、
+                音声データから文字起こし・議事録作成までを
+                行うWebアプリを制作しています。
+            </p>
+
+            <div class="work-tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+            </div>
+
+            <a href="#" class="work-link">
+                詳しく見る →
+            </a>
+
+        </article>
+
+
+        <!-- WORKS 03 -->
+        <article class="work-card" data-work="powerplatform">
+
+            <span class="work-category">Power Platform</span>
+
+            <h3>業務フローのデジタル化・自動化</h3>
+
+            <p class="work-description">
+                Power AppsやPower Automateを活用し、
+                日々の事務作業や社内業務の効率化に取り組んでいます。
+            </p>
+
+            <div class="work-tags">
+                <span>Power Apps</span>
+                <span>Power Automate</span>
+                <span>Microsoft 365</span>
+            </div>
+
+            <a href="#" class="work-link">
+                詳しく見る →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
 
 </section>
 
