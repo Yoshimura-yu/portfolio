@@ -95,3 +95,5 @@ tabs.forEach(tab => {
 // ページ読み込み時にも自動切り替えを開始
 startAutoSlide();
 
+track.style.transform = "translateX(-100%)";
+
