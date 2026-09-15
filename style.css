@@ -889,7 +889,7 @@ footer {
 
 .hero-leaf {
     position: absolute;
-    /* width: 280px; */
+    width: 600px;
     opacity: 0.3;
     pointer-events: none;
     z-index: 1;
