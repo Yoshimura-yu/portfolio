@@ -903,7 +903,7 @@ footer {
 
 .hero-leaf.right {
     top: -450px;
-    right: -550px;
+    right: -700px;
     transform: rotate(30deg) scaleX(-1);
 }
 
