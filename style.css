@@ -887,29 +887,36 @@ footer {
     margin: 0;
 }
 
+/* Portfolioと左右の葉っぱ */
+.portfolio-arch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    height: 80px;
+}
+
+
+/* 左右共通の葉っぱ */
 .title-leaf {
-    display: inline-block;
-    font-size: 10px;
+    width: 55px;
+    height: auto;
+
     opacity: 0.55;
 
-    /* 少し斜めに */
-    transform: rotate(-25deg);
-}
-
-.title-leaf.right {
-    transform: scaleX(-1) rotate(-25deg);
-}
-
-.title-leaf {
     position: relative;
     top: 10px;
+}
 
-    font-size: 10px;
-    opacity: 0.55;
 
+/* 左の葉っぱ */
+.title-leaf.left {
     transform: rotate(-25deg);
 }
 
+
+/* 右の葉っぱ */
 .title-leaf.right {
     transform: scaleX(-1) rotate(-25deg);
 }
