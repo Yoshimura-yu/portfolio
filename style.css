@@ -854,3 +854,17 @@ footer {
 .title-leaf.right {
     transform: scaleX(-1) rotate(-25deg);
 }
+
+.title-leaf {
+    position: relative;
+    top: 10px;
+
+    font-size: 22px;
+    opacity: 0.55;
+
+    transform: rotate(-25deg);
+}
+
+.title-leaf.right {
+    transform: scaleX(-1) rotate(-25deg);
+}
