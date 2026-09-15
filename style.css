@@ -843,39 +843,39 @@ footer {
 }
 
 .p1 {
-    transform: translateY(14px) rotate(-2deg);
+    transform: translateY(2px) rotate(-2deg);
 }
 
 .p2 {
-    transform: translateY(7px) rotate(-2deg);
+    transform: translateY(0px) rotate(-2deg);
 }
 
 .p3 {
-    transform: translateY(2px) rotate(-1deg);
+    transform: translateY(-2px) rotate(-1deg);
 }
 
 .p4 {
-    transform: translateY(-6px) rotate(-1deg);
+    transform: translateY(-4px) rotate(-1deg);
 }
 
 .p5 {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 }
 
 .p6 {
-    transform: translateY(-6px) rotate(1deg);
+    transform: translateY(-4px) rotate(1deg);
 }
 
 .p7 {
-    transform: translateY(2px) rotate(1deg);
+    transform: translateY(-2px) rotate(1deg);
 }
 
 .p8 {
-    transform: translateY(7px) rotate(2deg);
+    transform: translateY(0px) rotate(2deg);
 }
 
 .p9 {
-    transform: translateY(14px) rotate(2deg);
+    transform: translateY(2px) rotate(2deg);
 }
 
 .small-title {
