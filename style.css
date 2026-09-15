@@ -824,13 +824,58 @@ footer {
    アーチ型ポートフォリオ
 ========================= */
 
-.portfolio-title-wrap {
+.portfolio-arch {
+    font-family: "Allura", cursive;
+    font-size: 40px;
+    color: #789b91;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
 
-    margin-bottom: 10px;
+    height: 80px;
+}
+
+/* 1文字ずつ少しずつ持ち上げる */
+
+.portfolio-arch span {
+    display: inline-block;
+}
+
+.p1 {
+    transform: translateY(12px) rotate(-12deg);
+}
+
+.p2 {
+    transform: translateY(5px) rotate(-9deg);
+}
+
+.p3 {
+    transform: translateY(0px) rotate(-6deg);
+}
+
+.p4 {
+    transform: translateY(-4px) rotate(-3deg);
+}
+
+.p5 {
+    transform: translateY(-6px);
+}
+
+.p6 {
+    transform: translateY(-4px) rotate(3deg);
+}
+
+.p7 {
+    transform: translateY(0px) rotate(6deg);
+}
+
+.p8 {
+    transform: translateY(5px) rotate(9deg);
+}
+
+.p9 {
+    transform: translateY(12px) rotate(12deg);
 }
 
 .small-title {
