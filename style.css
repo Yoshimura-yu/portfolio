@@ -516,7 +516,7 @@ footer {
     animation: float 4s ease-in-out infinite;
 }
 .background-image1 {
-    position: fixed;
+     position: absolute;
 
     /* 画面の中央を指定 */
     left: 50%;
