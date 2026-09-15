@@ -890,15 +890,15 @@ footer {
 .hero-leaf {
     position: absolute;
     width: 1200px;
-    opacity: 0.6;
+    opacity: 0.8;
     pointer-events: none;
     z-index: 1;
 }
 
 .hero-leaf.left {
-    top: -40px;
-    left: -100px;
-    transform: rotate(20deg);
+    top: 0px;
+    left: -300px;
+    transform: rotate(60deg);
 }
 
 .hero-leaf.right {
