@@ -95,15 +95,6 @@ header {
         );
 }
 
-.portfolio-title {
-    font-family: "Allura", cursive;
-    font-size: 34px;
-    font-weight: 400;
-    color: #789b91;
-    letter-spacing: 1px;
-    transform: translateX(-120px);
-}
-
 .hero-content {
     transform: translateX(-120px);
 }
@@ -124,15 +115,13 @@ header {
 /* Portfolio */
 
 .small-title {
-    font-family: Georgia, serif;
-
-    font-size: 22px;
-
-    color: #78978c;
-
-    letter-spacing: 3px;
-
+    font-family: "Allura", cursive;
+    font-size: 34px;
+    font-weight: 400;
+    color: #789b91;
+    letter-spacing: 1px;
     margin-bottom: 10px;
+     transform: translateX(-120px);
 }
 
 
