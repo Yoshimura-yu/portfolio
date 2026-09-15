@@ -426,7 +426,7 @@ footer {
 .leaf2 {
     left: 55%;
     font-size: 18px;
-    animation-duration: 18s;
+    animation-duration: 16s;
     animation-delay: 3s;
 }
 
@@ -436,7 +436,7 @@ footer {
 .leaf3 {
     left: 80%;
     font-size: 25px;
-    animation-duration: 11s;
+    animation-duration: 13s;
     animation-delay: 6s;
 }
 
@@ -455,19 +455,19 @@ footer {
 
     25% {
         transform:
-            translate(70px, 200px)
+            translate(100px, 200px)
             rotate(90deg);
     }
 
     50% {
         transform:
-            translate(-30px, 450px)
+            translate(-50px, 450px)
             rotate(180deg);
     }
 
     75% {
         transform:
-            translate(80px, 700px)
+            translate(130px, 700px)
             rotate(270deg);
     }
 
