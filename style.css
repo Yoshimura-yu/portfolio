@@ -896,15 +896,15 @@ footer {
 }
 
 .hero-leaf.left {
-    top: -500px;
+    top: -600px;
     left: -450px;
     transform: rotate(-45deg);
 }
 
 .hero-leaf.right {
-    top: -450px;
-    right: -450px;
-    transform: rotate(-60deg) scaleX(-1);
+    top: -550px;
+    right: -750px;
+    transform: rotate(-10deg) scaleX(-1);
 }
 
 .hero-content {
