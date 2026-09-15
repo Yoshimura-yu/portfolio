@@ -843,15 +843,15 @@ footer {
 }
 
 .p1 {
-    transform: translateY(14px) rotate(-7deg);
+    transform: translateY(14px) rotate(-4deg);
 }
 
 .p2 {
-    transform: translateY(7px) rotate(-5deg);
+    transform: translateY(7px) rotate(-3deg);
 }
 
 .p3 {
-    transform: translateY(2px) rotate(-3deg);
+    transform: translateY(2px) rotate(-2deg);
 }
 
 .p4 {
@@ -867,15 +867,15 @@ footer {
 }
 
 .p7 {
-    transform: translateY(2px) rotate(3deg);
+    transform: translateY(2px) rotate(2deg);
 }
 
 .p8 {
-    transform: translateY(7px) rotate(5deg);
+    transform: translateY(7px) rotate(3deg);
 }
 
 .p9 {
-    transform: translateY(14px) rotate(7deg);
+    transform: translateY(14px) rotate(4deg);
 }
 
 .small-title {
