@@ -94,6 +94,15 @@ header {
             transparent 30%
         );
 }
+
+.portfolio-title {
+    font-family: "Allura", cursive;
+    font-size: 34px;
+    font-weight: 400;
+    color: #789b91;
+    letter-spacing: 1px;
+}
+
 .hero-content {
     transform: translateX(-120px);
 }
