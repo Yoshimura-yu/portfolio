@@ -843,11 +843,11 @@ footer {
 }
 
 .p1 {
-    transform: translateY(14px) rotate(-4deg);
+    transform: translateY(14px) rotate(-3deg);
 }
 
 .p2 {
-    transform: translateY(7px) rotate(-3deg);
+    transform: translateY(7px) rotate(-2deg);
 }
 
 .p3 {
@@ -871,11 +871,11 @@ footer {
 }
 
 .p8 {
-    transform: translateY(7px) rotate(3deg);
+    transform: translateY(7px) rotate(2deg);
 }
 
 .p9 {
-    transform: translateY(14px) rotate(4deg);
+    transform: translateY(14px) rotate(3deg);
 }
 
 .small-title {
