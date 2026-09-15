@@ -94,6 +94,9 @@ header {
             transparent 30%
         );
 }
+.hero-content {
+    transform: translateX(-30px);
+}
 
 
 /* Portfolio */
