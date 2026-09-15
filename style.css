@@ -820,3 +820,37 @@ footer {
     }
 
 }
+ /* =========================
+   アーチ型ポートフォリオ
+========================= */
+
+.portfolio-title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+.small-title {
+    font-family: "Allura", cursive;
+    font-size: 34px;
+    font-weight: 400;
+    color: #789b91;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.title-leaf {
+    display: inline-block;
+    font-size: 22px;
+    opacity: 0.55;
+
+    /* 少し斜めに */
+    transform: rotate(-25deg);
+}
+
+.title-leaf.right {
+    transform: scaleX(-1) rotate(-25deg);
+}
