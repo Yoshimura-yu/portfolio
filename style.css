@@ -515,6 +515,22 @@ footer {
     width: 600px;
     animation: float 4s ease-in-out infinite;
 }
+.background-image1 {
+    position: fixed;
+
+    /* 画面の中央を指定 */
+    left: 50%;
+    top: 50%;
+
+    /* 画像自身の大きさの半分だけ戻して、本当の中央にする */
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;
+}
+
+
 /* すーっと上がる → すーっと下がる → また上がる */
 /* @keyframes float {
     0% {
