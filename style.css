@@ -101,6 +101,7 @@ header {
     font-weight: 400;
     color: #789b91;
     letter-spacing: 1px;
+    transform: translateX(-120px);
 }
 
 .hero-content {
