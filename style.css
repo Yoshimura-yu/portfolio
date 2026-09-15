@@ -95,7 +95,7 @@ header {
         );
 }
 .hero-content {
-    transform: translateX(-30px);
+    transform: translateX(-100px);
 }
 
 
