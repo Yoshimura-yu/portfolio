@@ -95,7 +95,7 @@ header {
         );
 }
 .hero-content {
-    transform: translateX(-200px);
+    transform: translateX(-120px);
 }
 
 .hero h1 {
