@@ -902,9 +902,9 @@ footer {
 }
 
 .hero-leaf.right {
-    top: -450px;
+    top: -500px;
     right: -700px;
-    transform: rotate(30deg) scaleX(-1);
+    transform: rotate(40deg) scaleX(-1);
 }
 
 .hero-content {
