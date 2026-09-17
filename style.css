@@ -967,3 +967,9 @@ footer {
     display: block;
     margin-bottom: 12px;
 }
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
