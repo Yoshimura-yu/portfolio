@@ -952,9 +952,9 @@ footer {
 
 /* Portfolioとの距離 */
 .dots-left {
-    margin-right: 18px;
+    margin-right: 5px;
 }
 
 .dots-right {
-    margin-left: 18px;
+    margin-left: 5px;
 }
