@@ -847,7 +847,7 @@ footer {
 
     /* ・同士の間隔 */
   .dots span {
-    margin: 0 -12px;
+    margin: 0 -25px;
 }
 
     /* 点全体を少し下げる */
@@ -866,7 +866,7 @@ footer {
 
 .t1 {
    font-size: 20px;
-   transform: translateY(10px);
+   transform: translateY(12px);
 }
 .t2 {
    font-size: 20px;
@@ -925,7 +925,7 @@ footer {
 
 .t6 {
    font-size: 20px;
-   transform: translateY(10px);
+   transform: translateY(12px);
 }
 
 .small-title {
