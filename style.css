@@ -842,18 +842,38 @@ footer {
     display: inline-block;
 }
 
+.dots {
+    display: inline-flex;
+
+    /* ・同士の間隔 */
+    gap: 0px;
+
+    /* 点全体を少し下げる */
+    transform: translateY(6px);
+}
+
+/* Portfolioとの距離 */
+.dots-left {
+    margin-right: 5px;
+}
+
+.dots-right {
+    margin-left: 5px;
+}
+
+
 .t1 {
    font-size: 20px;
-   transform: translateY(2px);
+   transform: translateY(8px);
 }
 .t2 {
    font-size: 30px;
-   transform: translateY(-1px);
+   transform: translateY(3px);
 }
 
 .t3 {
    font-size: 40px;
-   transform: translateY(-3px);
+   transform: translateY(0px);
 }
 
 .p1 {
@@ -894,16 +914,16 @@ footer {
 
 .t4 {
    font-size: 40px;
-   transform: translateY(-3px);
+   transform: translateY(0px);
 }
 .t5 {
    font-size: 30px;
-   transform: translateY(-1px);
+   transform: translateY(3px);
 }
 
 .t6 {
    font-size: 20px;
-   transform: translateY(2px);
+   transform: translateY(8px);
 }
 
 .small-title {
@@ -940,21 +960,3 @@ footer {
     z-index: 2;
 }
 
-.dots {
-    display: inline-flex;
-
-    /* ・同士の間隔 */
-    gap: 0px;
-
-    /* 点全体を少し下げる */
-    transform: translateY(6px);
-}
-
-/* Portfolioとの距離 */
-.dots-left {
-    margin-right: 5px;
-}
-
-.dots-right {
-    margin-left: 5px;
-}
