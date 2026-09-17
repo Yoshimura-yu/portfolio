@@ -939,3 +939,22 @@ footer {
     position: relative;
     z-index: 2;
 }
+
+.dots {
+    display: inline-flex;
+
+    /* ・同士の間隔 */
+    gap: 0px;
+
+    /* 点全体を少し下げる */
+    transform: translateY(6px);
+}
+
+/* Portfolioとの距離 */
+.dots-left {
+    margin-right: 18px;
+}
+
+.dots-right {
+    margin-left: 18px;
+}
