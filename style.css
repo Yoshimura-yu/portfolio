@@ -842,6 +842,11 @@ footer {
     display: inline-block;
 }
 
+.t1 {
+   transform: translateY(2px) rotate(-2deg);
+}
+
+
 .p1 {
     transform: translateY(2px) rotate(-2deg);
 }
