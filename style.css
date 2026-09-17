@@ -846,7 +846,7 @@ footer {
     display: inline-flex;
 
     /* ・同士の間隔 */
-    gap: 5px;
+    gap: 15px;
 
     /* 点全体を少し下げる */
     transform: translateY(10px);
