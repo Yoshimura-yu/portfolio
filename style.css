@@ -847,12 +847,12 @@ footer {
    transform: translateY(2px);
 }
 .t2 {
-   font-size: 20px;
+   font-size: 30px;
    transform: translateY(-1px);
 }
 
 .t3 {
-   font-size: 20px;
+   font-size: 40px;
    transform: translateY(-3px);
 }
 
@@ -893,11 +893,11 @@ footer {
 }
 
 .t4 {
-   font-size: 20px;
+   font-size: 40px;
    transform: translateY(-3px);
 }
 .t5 {
-   font-size: 20px;
+   font-size: 30px;
    transform: translateY(-1px);
 }
 
