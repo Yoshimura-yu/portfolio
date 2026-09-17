@@ -843,7 +843,17 @@ footer {
 }
 
 .t1 {
+   font-size: 20px;
    transform: translateY(2px) rotate(-2deg);
+}
+.t2 {
+   font-size: 20px;
+   transform: translateY(0px) rotate(-1deg);
+}
+
+.t3 {
+   font-size: 20px;
+   transform: translateY(-2px) rotate(0deg);
 }
 
 
