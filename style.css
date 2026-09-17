@@ -962,3 +962,8 @@ footer {
     z-index: 2;
 }
 
+.skill-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+}
