@@ -971,5 +971,6 @@ footer {
 .skill-icons {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
 }
