@@ -96,7 +96,7 @@ header {
 }
 
 .hero-content {
-    transform: translateX(-120px);
+    transform: translateX(-100px);
 }
 
 .hero h1 {
