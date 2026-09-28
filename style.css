@@ -77,7 +77,10 @@ nav a:hover {
 
 header {
     position: relative;
-
+   
+　 /* 大きな葉っぱ画像(leaf02)を画面外にはみ出して配置しているため、
+       はみ出した部分でページの横幅が広がらないようにする
+       → 横スクロールバーが出るのを防ぐ */
    overflow-x: clip;
 
     text-align: center;
