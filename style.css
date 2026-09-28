@@ -269,22 +269,6 @@ h2::after {
    Skills
 ========================= */
 
-/* Skillsセクションだけ横幅を広げる
-   mainは950pxのまま、Skillsだけ最大1200pxにする */
-#skills {
-    width: 1200px;
-
-    /* 画面が狭い場合は、画面幅から40px余白を残して収める */
-    max-width: calc(100vw - 40px);
-
-    /* mainの中央を基準にSkillsを中央配置 */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-
 #skills ul {
     display: flex;
     flex-wrap: wrap;
