@@ -465,10 +465,10 @@ footer {
     width: 100px;
     opacity: 1.5;
 }
-/*.leaf3 img {
+.leaf3 img {
   　width: 50px;
     opacity: 1.1;
-} */
+} 
 
 
 /* 1枚目 */
@@ -491,12 +491,12 @@ footer {
 
 /* 3枚目 */
 
-/*.leaf3 {
+.leaf3 {
     left: 80%;
     font-size: 25px;
     animation-duration: 13s;
     animation-delay: 6s;
-} */
+} 
 
 
 /* =========================
