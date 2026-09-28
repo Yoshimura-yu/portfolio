@@ -78,10 +78,13 @@ nav a:hover {
 header {
     position: relative;
    
-　 /* 大きな葉っぱ画像(leaf02)を画面外にはみ出して配置しているため、
+　　 /* 大きな葉っぱ画像(leaf02)を画面外にはみ出して配置しているため、
        はみ出した部分でページの横幅が広がらないようにする
-       → 横スクロールバーが出るのを防ぐ */
-   overflow-x: clip;
+       → 横スクロールバーが出るのを防ぐ
+   overflow-x: clip; */
+
+     /* headerの外にはみ出した装飾画像を表示しない */
+    overflow: hidden;
 
     text-align: center;
 
