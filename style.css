@@ -248,7 +248,7 @@ h2::after {
 
     display: block;
 
-     45px;
+    width: 45px;
 
     height: 3px;
 
@@ -400,15 +400,15 @@ footer {
 
 
 .leaf1 img {
-     150px;
+   width:  150px;
     opacity: 0;
 }
 .leaf2 img {
-     100px;
+    width: 100px;
     opacity: 1.5;
 }
 .leaf3 img {
-     50px;
+  　width: 50px;
     opacity: 1.1;
 }
 
@@ -520,12 +520,12 @@ footer {
 }
 
 .background-image img {
-     600px;
+    width: 600px;
     opacity: 0.4;
 }
 
 .background-image img {
-     600px;
+    width: 600px;
     animation: float 4s ease-in-out infinite;
 }
 
