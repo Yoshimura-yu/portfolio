@@ -96,7 +96,7 @@ header {
 }
 
 .hero-content {
-    transform: translateX(-100px);
+    transform: translateX(-180px);
 }
 
 .hero h1 {
@@ -939,7 +939,7 @@ footer {
 
 .hero-leaf {
     position: absolute;
-    width: 950px;
+    width: 120px;
     opacity: 0.8;
     pointer-events: none;
     z-index: 1;
