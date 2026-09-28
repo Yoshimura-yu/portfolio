@@ -248,7 +248,7 @@ h2::after {
 
     display: block;
 
-    width: 45px;
+     45px;
 
     height: 3px;
 
@@ -347,7 +347,7 @@ footer {
    スマホ対応
 ========================= */
 
-@media (max-width: 600px) {
+@media (max- 600px) {
 
     nav {
         gap: 15px;
@@ -400,15 +400,15 @@ footer {
 
 
 .leaf1 img {
-    width: 150px;
+     150px;
     opacity: 0;
 }
 .leaf2 img {
-    width: 100px;
+     100px;
     opacity: 1.5;
 }
 .leaf3 img {
-    width: 50px;
+     50px;
     opacity: 1.1;
 }
 
@@ -520,12 +520,12 @@ footer {
 }
 
 .background-image img {
-    width: 600px;
+     600px;
     opacity: 0.4;
 }
 
 .background-image img {
-    width: 600px;
+     600px;
     animation: float 4s ease-in-out infinite;
 }
 
@@ -939,7 +939,7 @@ footer {
 
 .hero-leaf {
     position: absolute;
-    width: 1200px;
+    width: 950px;
     opacity: 0.8;
     pointer-events: none;
     z-index: 1;
