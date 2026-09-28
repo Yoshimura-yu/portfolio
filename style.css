@@ -315,6 +315,29 @@ h2::after {
     color: #666;
 }
 
+.skill-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+    opacity: 0.82;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 55px;
+}
+
+.skill-image {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+    opacity: 0.85;
+}
 
 /* =========================
    Works
@@ -965,26 +988,4 @@ footer {
     z-index: 2;
 }
 
-.skill-icon {
-    font-size: 48px;
-    display: block;
-    margin-bottom: 12px;
-    opacity: 0.82;
-}
 
-.skill-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 55px;
-}
-
-.skill-image {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 12px;
-    opacity: 0.85;
-}
