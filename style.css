@@ -225,11 +225,8 @@ header > p:not(.small-title):not(.catch-copy) {
 ========================= */
 
 main {
-    max-width: 950px;
-
+    width: min(1200px, calc(100% - 40px));
     margin: 60px auto;
-
-    padding: 0 20px;
 }
 
 
@@ -576,7 +573,8 @@ footer {
 
 
 .background-image img {
-    width: 600px;
+     width: clamp(250px, 35vw, 600px);
+    height: auto;
     animation: float 4s ease-in-out infinite;
     opacity: 0.4;
 }
