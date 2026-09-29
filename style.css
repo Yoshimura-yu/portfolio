@@ -45,21 +45,13 @@ body {
 
 html,
 body {
-    width: 100%;
     max-width: 100%;
     margin: 0;
-
-    /* 装飾画像による横はみ出しを防ぐ */
     overflow-x: hidden;
 }
 
 * {
     box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 
